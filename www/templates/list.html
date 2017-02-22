@@ -1,0 +1,18 @@
+<ion-view>
+
+    <ion-nav-bar>
+        <ion-nav-title>Ionic Tutorial 01</ion-nav-title>
+    </ion-nav-bar>
+    <ion-content>
+        <h3>Contact</h3>
+        
+        <div class="list">
+            <div class="item item-avatar-left item-icon-right" ng-click="showDetail(data)" ng-repeat="data in datas">
+                <img src="./img/{{ data.pic }}">
+                <h2>{{ data.nick }}</h2>
+                <p>{{ data.name }}</p>
+                <i class="icon ion-ios-arrow-right"></i>
+            </div>       
+        </div>
+    </ion-content>
+</ion-view>
